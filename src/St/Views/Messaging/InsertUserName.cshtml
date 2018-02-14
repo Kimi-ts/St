@@ -1,0 +1,13 @@
+@model St.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "InsertUserName";
+}
+
+<h2>InsertUserName</h2>
+
+<form action="@Url.Action("Index")" method="post">
+    <input type="text" placeholder="Insert user name" name="userName" />
+    <input type="submit" value="E?ter" />
+</form>
+

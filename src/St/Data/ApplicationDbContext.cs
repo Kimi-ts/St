@@ -18,8 +18,6 @@ namespace St.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-
-            builder.Entity<Chat>().ToTable("Chats");
         }
 
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
